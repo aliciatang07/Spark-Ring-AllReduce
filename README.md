@@ -7,7 +7,7 @@ This repo is for the CSC2222 term project "Survey and Improvement of Distributed
 ## prepare Instruction 
    Type in command ```sbt assembly``` in root folder to generate deployable jar 
 
-##Running Instruction 
+## Running Instruction 
 1. run Spark RingAllReduce with local mode m cores 
 ```
 <SPARK_HOME>/bin/spark-submit --class com.ringallreduce.RingAllReduce --master spark://<SPARK_MASTER>:7077 ./target/scala-2.11/spark-ringallreduce-assembly-1.0.jar m 
