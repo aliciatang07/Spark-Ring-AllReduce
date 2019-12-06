@@ -89,8 +89,8 @@ object RingAllReduce {
 //    val v3 = Array(9.0, 10.0, 11.0, 12.0)
 //    val v4 = Array(13.0, 14.0, 15.0, 16.0)
 
-    val n = cores.toInt
-    var rddC = sc.parallelize(Array(v1, v2, v3, v4, v5, v6, v7, v8),n)
+    val n = 8
+    var rddC = sc.parallelize(Array(v1, v2, v3, v4, v5, v6, v7, v8),8)
 //    var rddC = sc.parallelize(Array(v1,v2,v3,v4),n)
     val MapAccumulator = new MapAccumulator()
     sc.register(MapAccumulator, "mapacc")

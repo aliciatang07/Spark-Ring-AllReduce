@@ -84,8 +84,8 @@ object RingAllReduceDC{
     val v8 = Array(57.0, 58.0, 59.0, 60.0, 61.0, 62.0, 63.0, 64.0)
 
 
-    val n = cores.toInt/2
-    val m = cores.toInt
+    val n = 4
+    val m = 8
 
     var rddA = sc.parallelize(Array(v1, v2, v3, v4),4)
     var rddB = sc.parallelize(Array(v5, v6, v7, v8),4)
